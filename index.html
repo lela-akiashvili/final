@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/800e72e4f1.js"
+      crossorigin="anonymous"
+    ></script>
+    <script type="module" src="scripts/script.js"></script>
+    <link rel="stylesheet" href="styles/style.css" />
+    <title>Pocket library</title>
+  </head>
+  <body>
+    <header>
+      <div class="title">
+        <h1><a href="index.html">Pocket LibRary</a></h1>
+        <i class="fa-solid fa-bars"></i>
+        <ul class="menu">
+          <li><a href="bookmarks.html">Bookmarks</a></li>
+          <li><a href="signIn.html">Sign In</a></li>
+          <li><a href="signUp.html">Sign Up</a></li>
+        </ul>
+      </div>
+
+      <div class="search-div">
+        <p>"Ask For A Book And Thou Shall Recieve A Movie"</p>
+        <span>
+          <input type="text" placeholder="e.g: The Great Gatsby" />
+          <button class="search">search</button>
+        </span>
+      </div>
+    </header>
+    <main>
+      <section>
+        <div class="checkboxes">
+          <div>
+            <input type="checkbox" id="drama" value="drama" />
+            <label for="drama" id="drama">drama</label>
+          </div>
+          <div>
+            <input type="checkbox" id="fiction" value="fiction" />
+            <label for="fiction" id="fiction">fiction</label>
+          </div>
+          <div>
+            <input type="checkbox" id="poetry" value="poetry" />
+            <label for="poetry" id="poetry">poetry</label>
+          </div>
+          <div>
+            <input type="checkbox" id="mystery" value="mystery" />
+            <label for="mystery" id="mystery">mystery</label>
+          </div>
+          <div>
+            <input type="checkbox" id="horror" value="horror" />
+            <label for="horror" id="horror">horror</label>
+          </div>
+          <div>
+            <input type="checkbox" id="romance" value="romance" />
+            <label for="romance" id="romance">romance</label>
+          </div>
+
+          <div>
+            <input
+              type="checkbox"
+              id=" science-fiction"
+              value="science-fiction"
+            />
+            <label for=" science-fiction" id="science-fiction">
+              science fiction</label
+            >
+          </div>
+          <div>
+            <input type="checkbox" id="nonfiction" value="nonfiction" />
+            <label for="nonfiction" id="nonfiction">nonfiction</label>
+          </div>
+          <div>
+            <input type="checkbox" id="fantasy" value="fantasy" />
+            <label for="fantasy" id="fantasy">fantasy</label>
+          </div>
+          <br />
+          <button class="filter-btn" style="margin-left: 5px">filter</button>
+        </div>
+        <div class="filter"></div>
+      </section>
+      <section class="default">
+        <div>
+          <h3 style="margin: 1rem; color: green; font-style: italic">
+            trending
+          </h3>
+          <div class="tranding"></div>
+        </div>
+
+        <div>
+          <h3 style="margin: 1rem; color: green; font-style: italic">
+            classics
+          </h3>
+          <div class="classics"></div>
+        </div>
+        <div>
+          <h3 style="margin: 1rem; color: green; font-style: italic">novels</h3>
+          <div class="novels"></div>
+        </div>
+      </section>
+      <p style="margin-top: 10px" class="results"></p>
+
+      <section class="search-results">
+        <div>
+          <button class="booksDropDown">
+            books
+            <i class="fa-solid fa-chevron-down" style="font-size: smaller"></i>
+          </button>
+          <div class="books"></div>
+        </div>
+        <div class="right">
+          <button class="moviesDropDown">
+            movies
+            <i class="fa-solid fa-chevron-down" style="font-size: smaller"></i>
+          </button>
+          <div class="movies"></div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

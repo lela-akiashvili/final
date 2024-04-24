@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/800e72e4f1.js"
+      crossorigin="anonymous"
+    ></script>
+    <script type="module" src="scripts/signUp.js"></script>
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="styles/signup.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <div class="title">
+        <h1><a href="index.html">Pocket LibRary</a></h1>
+        <i class="fa-solid fa-bars"></i>
+      </div>
+      <ul class="menu">
+        <li><a href="index.html">Books</a></li>
+        <li>Movies</li>
+        <li><a href="bookmarks.html">Bookmarks</a></li>
+        <li> <a href="signIn.html">Sign In</a></li>
+      </ul>
+    </header>
+    <main>
+      <div class="switch">
+        <button class="active">sign up</button>
+        <button class="passive">
+          <a href="signIn.html">sign in</a>
+        </button>
+      </div>
+      <form action="">
+        <div>
+          <label for="username">Username</label>
+          <input type="text" id="username" />
+        </div>
+        <div>
+          <label for="password">Password</label>
+          <input type="text" id="password" />
+          <span style="color: red; font-size: x-small; font-weight: 600"
+            >should contain: A-Z, 0-9,!@#$%^&*</span
+          >
+        </div>
+        <div>
+          <label for="confirm-password">confirm Password</label>
+          <input type="text" id="confirm-password" />
+        </div>
+        <span
+          style="
+            display: block;
+            font-style: italic;
+            text-align: center;
+            margin-top: 1rem;
+            color: red;
+          "
+          class="result"
+        ></span>
+        <button type="button" class="active agree">Sign Up</button>
+      </form>
+    </main>
+  </body>
+</html>
